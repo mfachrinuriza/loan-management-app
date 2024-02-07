@@ -6,6 +6,10 @@ PODS:
   - RxRelay (6.6.0):
     - RxSwift (= 6.6.0)
   - RxSwift (6.6.0)
+  - ShimmerSwift (2.1.1)
+  - SwiftMessages (9.0.9):
+    - SwiftMessages/App (= 9.0.9)
+  - SwiftMessages/App (9.0.9)
   - Swinject (2.8.3)
   - SwinjectAutoregistration (2.8.3):
     - Swinject (~> 2.8.3)
@@ -14,6 +18,8 @@ DEPENDENCIES:
   - Alamofire (= 5.4.4)
   - RxCocoa
   - RxSwift
+  - ShimmerSwift
+  - SwiftMessages
   - Swinject
   - SwinjectAutoregistration
 
@@ -23,6 +29,8 @@ SPEC REPOS:
     - RxCocoa
     - RxRelay
     - RxSwift
+    - ShimmerSwift
+    - SwiftMessages
     - Swinject
     - SwinjectAutoregistration
 
@@ -31,9 +39,11 @@ SPEC CHECKSUMS:
   RxCocoa: 44a80de90e25b739b5aeaae3c8c371a32e3343cc
   RxRelay: 45eaa5db8ee4fb50e5ebd57deec0159e97fa51e6
   RxSwift: a4b44f7d24599f674deebd1818eab82e58410632
+  ShimmerSwift: f7ed2daf9c246de8299dfd9e12c6ab465cba9842
+  SwiftMessages: 1a23aef303fa7bb26ad802880746cf8358e378fe
   Swinject: 893c9a543000ac2f10ee4cbaf0933c6992c935d5
   SwinjectAutoregistration: e3ee378dc458acf78d176fc7fec3902603452667
 
-PODFILE CHECKSUM: a298df91e7e796affd37dece7cda83d5c3983706
+PODFILE CHECKSUM: 0d93b7bb84714e1ae26483cd80af22c03405ba7d
 
 COCOAPODS: 1.11.3

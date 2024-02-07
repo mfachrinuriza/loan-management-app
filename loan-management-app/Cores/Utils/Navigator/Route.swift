@@ -9,5 +9,5 @@ import Foundation
 
 public enum Route {
     case home
-    case detail(id: Int)
+    case detail(loan: Loan)
 }

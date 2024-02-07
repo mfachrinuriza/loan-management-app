@@ -11,4 +11,6 @@ target 'loan-management-app' do
   pod 'Alamofire', '5.4.4'
   pod 'Swinject'
   pod 'SwinjectAutoregistration'
+  pod 'ShimmerSwift'
+  pod 'SwiftMessages'
 end
