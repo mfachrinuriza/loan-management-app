@@ -19,6 +19,7 @@ public class DI: DIProtocol {
             // Modules
             HomeAssembly(),
             CoreAssembly(),
+            DetailAssembly(),
         ],
         container: DI.container
     )

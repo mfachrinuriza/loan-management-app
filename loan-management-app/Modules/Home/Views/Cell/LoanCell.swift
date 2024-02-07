@@ -17,7 +17,7 @@ class LoanCell: UICollectionViewCell {
     @IBOutlet weak var amount: UILabel!
     @IBOutlet weak var reason: UILabel!
     @IBOutlet weak var interestRate: UILabel!
-    @IBOutlet weak var dueDate: UILabel!
+    @IBOutlet weak var term: UILabel!
     
     static let cellIdentifier = "LoanCell"
     
@@ -45,6 +45,8 @@ class LoanCell: UICollectionViewCell {
         amount.text = "\(data.amount?.f(.currency) ?? "")"
         reason.text = data.purpose
         interestRate.text = "\(data.interestRate ?? 0)"
-        dueDate.text = DateTime.getDateStringFromDashedDateString(string: installments?.first?.dueDate ?? "")
+        term.text = "\(data.term ?? 0)"
     }
+    
+    
 }

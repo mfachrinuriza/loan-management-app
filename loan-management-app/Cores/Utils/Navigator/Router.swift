@@ -18,9 +18,9 @@ struct Router: RouterProtocol {
         case .home:
             let homeViewController = DI.get(HomeViewController.self)
             return homeViewController
-        case .detail(let gameId):
+        case .detail(let loan):
             let detailViewController = DI.get(DetailViewController.self)
-//            detailViewController.gameId = gameId
+            detailViewController.loan = loan
             return detailViewController
         }
     }
