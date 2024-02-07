@@ -7,7 +7,7 @@
 
 import UIKit
 
-open class BaseVIewController: UIViewController, UIGestureRecognizerDelegate {
+open class BaseViewController: UIViewController, UIGestureRecognizerDelegate {
     
     var loading: LoadingView?
     

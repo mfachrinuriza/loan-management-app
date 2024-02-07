@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-Regular.otf">
+            <string>Inter-Regular</string>
+        </array>
+        <array key="Inter-SemiBold.otf">
+            <string>Inter-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="loan_management_app" customModuleProvider="target">
+            <connections>
+                <outlet property="amount" destination="lc4-Xg-JYG" id="0yX-CK-5WV"/>
+                <outlet property="borrowersTotal" destination="hoI-5C-QsD" id="qZe-g6-gnb"/>
+                <outlet property="chips" destination="dgr-k3-NIO" id="IBh-ca-9Nk"/>
+                <outlet property="collectionView" destination="8uW-xO-1Dc" id="uTa-9u-OX4"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HRo-5t-4Fp">
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="nBh-hf-q0s">
+                            <rect key="frame" x="16" y="20" width="361" height="354.66666666666669"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="v5r-2z-YPq">
+                                    <rect key="frame" x="0.0" y="0.0" width="361" height="38.333333333333336"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xG9-b6-U3a">
+                                            <rect key="frame" x="0.0" y="0.0" width="361" height="14.666666666666666"/>
+                                            <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="12"/>
+                                            <color key="textColor" name="black60"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John Doe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lI3-dF-kgX">
+                                            <rect key="frame" x="0.0" y="18.666666666666671" width="361" height="19.666666666666671"/>
+                                            <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="16"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UwQ-rE-mgr" customClass="CustomUIView" customModule="loan_management_app" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="54.333333333333336" width="361" height="108.33333333333331"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="t4C-bx-Q5Y">
+                                            <rect key="frame" x="12" y="12" width="337" height="84.333333333333329"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Loan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MAM-2p-nRB">
+                                                    <rect key="frame" x="0.0" y="0.0" width="337" height="25.333333333333332"/>
+                                                    <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="12"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rp.20.000.000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lc4-Xg-JYG">
+                                                    <rect key="frame" x="0.0" y="29.333333333333314" width="337" height="25.666666666666671"/>
+                                                    <fontDescription key="fontDescription" name="Inter-SemiBold" family="Inter" pointSize="20"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Borrowers: 15.245" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hoI-5C-QsD">
+                                                    <rect key="frame" x="0.0" y="59.000000000000007" width="337" height="25.333333333333336"/>
+                                                    <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="12"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" name="Primary10"/>
+                                    <constraints>
+                                        <constraint firstItem="t4C-bx-Q5Y" firstAttribute="leading" secondItem="UwQ-rE-mgr" secondAttribute="leading" constant="12" id="4bc-sI-TAc"/>
+                                        <constraint firstItem="t4C-bx-Q5Y" firstAttribute="top" secondItem="UwQ-rE-mgr" secondAttribute="top" constant="12" id="E6K-Tw-4qe"/>
+                                        <constraint firstAttribute="bottom" secondItem="t4C-bx-Q5Y" secondAttribute="bottom" constant="12" id="NO2-DD-i66"/>
+                                        <constraint firstAttribute="width" secondItem="UwQ-rE-mgr" secondAttribute="height" multiplier="5:1.5" id="eja-rA-bkW"/>
+                                        <constraint firstAttribute="trailing" secondItem="t4C-bx-Q5Y" secondAttribute="trailing" constant="12" id="ydp-XJ-Qn6"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                            <color key="value" name="Primary20"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                            <color key="value" name="Primary30"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="8"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dgr-k3-NIO" customClass="Chips" customModule="loan_management_app" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="178.66666666666669" width="361" height="32"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="32" id="1ub-Uc-Aoy"/>
+                                    </constraints>
+                                </view>
+                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="361" placeholderIntrinsicHeight="128" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="8uW-xO-1Dc" customClass="FittedCollectionView" customModule="LoanManagement" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="226.66666666666669" width="361" height="128"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="6h2-iX-6td">
+                                        <size key="itemSize" width="128" height="128"/>
+                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </collectionViewFlowLayout>
+                                </collectionView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" name="Bg"/>
+                    <constraints>
+                        <constraint firstItem="nBh-hf-q0s" firstAttribute="top" secondItem="HRo-5t-4Fp" secondAttribute="top" constant="20" id="bTn-Li-5KE"/>
+                        <constraint firstItem="nBh-hf-q0s" firstAttribute="leading" secondItem="HRo-5t-4Fp" secondAttribute="leading" constant="16" id="ogX-Y8-7l7"/>
+                        <constraint firstAttribute="trailing" secondItem="nBh-hf-q0s" secondAttribute="trailing" constant="16" id="suM-bJ-FBm"/>
+                        <constraint firstAttribute="bottom" secondItem="nBh-hf-q0s" secondAttribute="bottom" id="uis-Qr-lgV"/>
+                        <constraint firstItem="nBh-hf-q0s" firstAttribute="centerX" secondItem="HRo-5t-4Fp" secondAttribute="centerX" id="xcl-LZ-IyL"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="Bg"/>
+            <constraints>
+                <constraint firstItem="HRo-5t-4Fp" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="3sw-FY-sR7"/>
+                <constraint firstItem="HRo-5t-4Fp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="YyC-P5-qIZ"/>
+                <constraint firstItem="HRo-5t-4Fp" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="wfK-dk-sb8"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="HRo-5t-4Fp" secondAttribute="bottom" id="ydb-Nd-LDu"/>
+            </constraints>
+            <point key="canvasLocation" x="138" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="Bg">
+            <color red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Primary10">
+            <color red="0.42352941176470588" green="0.6470588235294118" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Primary20">
+            <color red="0.21176470588235294" green="0.54509803921568623" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Primary30">
+            <color red="0.066666666666666666" green="0.47058823529411764" blue="0.83137254901960789" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="black60">
+            <color red="0.2627450980392157" green="0.27843137254901962" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

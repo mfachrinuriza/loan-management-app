@@ -9,7 +9,7 @@ import Foundation
 
 public class Logger: NSObject {
     
-    static let enableLoging = false
+    static let enableLoging = true
     
     public class func printLog(_ items: Any?) {
         if Logger.enableLoging {
