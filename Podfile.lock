@@ -1,0 +1,53 @@
+PODS:
+  - Alamofire (5.4.4)
+  - Kingfisher (7.10.1)
+  - RxCocoa (6.6.0):
+    - RxRelay (= 6.6.0)
+    - RxSwift (= 6.6.0)
+  - RxRelay (6.6.0):
+    - RxSwift (= 6.6.0)
+  - RxSwift (6.6.0)
+  - ShimmerSwift (2.1.1)
+  - SwiftMessages (9.0.9):
+    - SwiftMessages/App (= 9.0.9)
+  - SwiftMessages/App (9.0.9)
+  - Swinject (2.8.3)
+  - SwinjectAutoregistration (2.8.3):
+    - Swinject (~> 2.8.3)
+
+DEPENDENCIES:
+  - Alamofire (= 5.4.4)
+  - Kingfisher
+  - RxCocoa
+  - RxSwift
+  - ShimmerSwift
+  - SwiftMessages
+  - Swinject
+  - SwinjectAutoregistration
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Kingfisher
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - ShimmerSwift
+    - SwiftMessages
+    - Swinject
+    - SwinjectAutoregistration
+
+SPEC CHECKSUMS:
+  Alamofire: f3b09a368f1582ab751b3fff5460276e0d2cf5c9
+  Kingfisher: bc5abe80a8e0144537ef1dd5a0b2621b04f7f439
+  RxCocoa: 44a80de90e25b739b5aeaae3c8c371a32e3343cc
+  RxRelay: 45eaa5db8ee4fb50e5ebd57deec0159e97fa51e6
+  RxSwift: a4b44f7d24599f674deebd1818eab82e58410632
+  ShimmerSwift: f7ed2daf9c246de8299dfd9e12c6ab465cba9842
+  SwiftMessages: 1a23aef303fa7bb26ad802880746cf8358e378fe
+  Swinject: 893c9a543000ac2f10ee4cbaf0933c6992c935d5
+  SwinjectAutoregistration: e3ee378dc458acf78d176fc7fec3902603452667
+
+PODFILE CHECKSUM: b81e1b25b96a1eb98287fd5fefa348601a196d0e
+
+COCOAPODS: 1.11.3

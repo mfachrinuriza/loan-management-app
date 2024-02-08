@@ -1,0 +1,6 @@
+framework module Pods_loan_management_app {
+  umbrella header "Pods-loan-management-app-umbrella.h"
+
+  export *
+  module * { export * }
+}
