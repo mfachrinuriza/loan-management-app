@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Cores
 
 struct Router: RouterProtocol {
     
@@ -22,6 +23,10 @@ struct Router: RouterProtocol {
             let detailViewController = DI.get(DetailViewController.self)
             detailViewController.loan = loan
             return detailViewController
+        case .document(let documentUrl):
+            let documentViewController = DI.get(DocumentViewController.self)
+            documentViewController.documentUrl = documentUrl
+            return documentViewController
         }
     }
 }

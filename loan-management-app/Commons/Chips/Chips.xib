@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Chips" customModule="loan_management_app" customModuleProvider="target">
             <connections>
                 <outlet property="collectionView" destination="Mb4-eM-yfF" id="AZd-56-tuY"/>
+                <outlet property="view" destination="iN0-l3-epB" id="dRV-sp-V0u"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>

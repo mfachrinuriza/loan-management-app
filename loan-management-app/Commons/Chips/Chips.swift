@@ -6,8 +6,7 @@
 //
 
 import UIKit
-
-import UIKit
+import Cores
 
 class Chips: UIView {
     public var insets: UIEdgeInsets? {

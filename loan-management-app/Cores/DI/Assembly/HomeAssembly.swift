@@ -7,6 +7,7 @@
 
 import Swinject
 import SwinjectAutoregistration
+import Cores
 
 class HomeAssembly: Assembly {
     func assemble(container: Container) {

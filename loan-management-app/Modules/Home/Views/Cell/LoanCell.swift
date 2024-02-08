@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import Cores
 class LoanCell: UICollectionViewCell {
 
     @IBOutlet weak var container: CustomUIView!
@@ -42,7 +42,7 @@ class LoanCell: UICollectionViewCell {
         creditScore.text = "\(borrower?.creditScore ?? 0)"
         name.text = borrower?.name
         riskRating.text = WordingEnum.riskRating(data.riskRating ?? "")
-        amount.text = "\(data.amount?.f(.currency) ?? "")"
+//        amount.text = "\(data.amount?.f(.currency) ?? "")"
         reason.text = data.purpose
         interestRate.text = "\(data.interestRate ?? 0)"
         term.text = "\(data.term ?? 0)"

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Cores
 
 class ChipsCell: UICollectionViewCell, ChipsCellProtocol {
 
@@ -20,7 +21,7 @@ class ChipsCell: UICollectionViewCell, ChipsCellProtocol {
     public func update(with item: ChipItem, isSelected: Bool) {
         label.text = item.name
         label.textColor = isSelected ? UIColor.white : Color.getColor(name: .primary30)
-        container.backgroundColor = isSelected ? Color.getColor(name: .primary30) : HexCodeColor.hexStringToUIColor(hex: "#EFF3F6")
+        container.backgroundColor = isSelected ? Color.getColor(name: .primary30) : Color.getColor(name: .black20)
     }
 
 }

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Cores
 
 class HomeViewController: BaseViewController {
 
@@ -61,7 +62,9 @@ class HomeViewController: BaseViewController {
                 self.homeViewModel.loanListFiltered.accept(nil)
                 self.collectionView.reloadData()
             }
+            chips.selected = selected
         }
+        
     }
     
     func updateUI() {

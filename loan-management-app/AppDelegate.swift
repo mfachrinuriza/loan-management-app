@@ -6,10 +6,10 @@
 //
 
 import UIKit
+import Cores
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
 
 
     var window: UIWindow?

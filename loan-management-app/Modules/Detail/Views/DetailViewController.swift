@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Cores
 
 class DetailViewController: BaseViewController {
 
@@ -66,6 +67,6 @@ class DetailViewController: BaseViewController {
     }
     
     @IBAction func btnShowDocumentTapped(_ sender: Any) {
-        
+        self.navigator.push(.document(documentUrl: loan?.documents?.first?.url ?? ""))
     }
 }

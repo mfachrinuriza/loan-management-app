@@ -20,6 +20,7 @@ public class DI: DIProtocol {
             HomeAssembly(),
             CoreAssembly(),
             DetailAssembly(),
+            DocumentAssembly(),
         ],
         container: DI.container
     )
