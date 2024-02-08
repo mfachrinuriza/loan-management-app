@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A6D43AB2B750D83009D8DB9 /* CoreAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A6D43AA2B750D83009D8DB9 /* CoreAssembly.swift */; };
 		4A79D4D72B736199006ECE04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A79D4D62B736199006ECE04 /* AppDelegate.swift */; };
 		4A79D4E02B73619B006ECE04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A79D4DF2B73619B006ECE04 /* Assets.xcassets */; };
 		4A79D4E32B73619B006ECE04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A79D4E12B73619B006ECE04 /* LaunchScreen.storyboard */; };
@@ -25,7 +26,6 @@
 		4AEFDF512B73861700A3C80F /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEFDF502B73861700A3C80F /* Router.swift */; };
 		4AEFDF552B73865D00A3C80F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEFDF532B73865D00A3C80F /* DetailViewController.swift */; };
 		4AEFDF562B73865D00A3C80F /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AEFDF542B73865D00A3C80F /* DetailViewController.xib */; };
-		4AEFDF592B7389A300A3C80F /* CoreAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEFDF582B7389A300A3C80F /* CoreAssembly.swift */; };
 		4AEFDF5B2B738F8500A3C80F /* AutoShimmerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEFDF5A2B738F8500A3C80F /* AutoShimmerView.swift */; };
 		4AEFDF5E2B73903500A3C80F /* WordingEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEFDF5D2B73903500A3C80F /* WordingEnum.swift */; };
 		4AEFDF622B73B80000A3C80F /* LoanCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEFDF602B73B80000A3C80F /* LoanCell.swift */; };
@@ -65,6 +65,7 @@
 /* Begin PBXFileReference section */
 		0F82E18DDA4DBAADD264BC27 /* Pods_loan_management_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_loan_management_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FD329568B63D5877CF5CC16 /* Pods-loan-management-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-loan-management-app.release.xcconfig"; path = "Target Support Files/Pods-loan-management-app/Pods-loan-management-app.release.xcconfig"; sourceTree = "<group>"; };
+		4A6D43AA2B750D83009D8DB9 /* CoreAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreAssembly.swift; sourceTree = "<group>"; };
 		4A79D4D32B736199006ECE04 /* loan-management-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "loan-management-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A79D4D62B736199006ECE04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A79D4DF2B73619B006ECE04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -85,7 +86,6 @@
 		4AEFDF502B73861700A3C80F /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		4AEFDF532B73865D00A3C80F /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		4AEFDF542B73865D00A3C80F /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
-		4AEFDF582B7389A300A3C80F /* CoreAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CoreAssembly.swift; path = ../../../../../../../Downloads/CoreAssembly.swift; sourceTree = "<group>"; };
 		4AEFDF5A2B738F8500A3C80F /* AutoShimmerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoShimmerView.swift; sourceTree = "<group>"; };
 		4AEFDF5D2B73903500A3C80F /* WordingEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordingEnum.swift; sourceTree = "<group>"; };
 		4AEFDF602B73B80000A3C80F /* LoanCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanCell.swift; sourceTree = "<group>"; };
@@ -228,7 +228,7 @@
 			children = (
 				4AEFDF4C2B737D9E00A3C80F /* HomeAssembly.swift */,
 				4AEFDF7A2B740C8B00A3C80F /* DetailAssembly.swift */,
-				4AEFDF582B7389A300A3C80F /* CoreAssembly.swift */,
+				4A6D43AA2B750D83009D8DB9 /* CoreAssembly.swift */,
 			);
 			path = Assembly;
 			sourceTree = "<group>";
@@ -600,10 +600,10 @@
 				4AF164532B7371EC005C1B7A /* RouterProtocol.swift in Sources */,
 				4AEFDF772B73D00300A3C80F /* Extension+Double.swift in Sources */,
 				4AF164432B737106005C1B7A /* DI.swift in Sources */,
+				4A6D43AB2B750D83009D8DB9 /* CoreAssembly.swift in Sources */,
 				4AF1644E2B7371AA005C1B7A /* BuildIdentifier.swift in Sources */,
 				4AF1642D2B736EBF005C1B7A /* BaseService.swift in Sources */,
 				4AF164362B737007005C1B7A /* FontEnum.swift in Sources */,
-				4AEFDF592B7389A300A3C80F /* CoreAssembly.swift in Sources */,
 				4AEFDF792B73D0A700A3C80F /* DateTime.swift in Sources */,
 				4AF1642B2B736EBF005C1B7A /* BaseViewController.swift in Sources */,
 				4AEFDF4D2B737D9E00A3C80F /* HomeAssembly.swift in Sources */,
